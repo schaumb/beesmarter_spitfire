@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		5131B2641C6E5DE500E8DC32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2631C6E5DE500E8DC32 /* main.m */; };
 		5131B2671C6E5DE500E8DC32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2661C6E5DE500E8DC32 /* AppDelegate.m */; };
-		5131B26A1C6E5DE500E8DC32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2691C6E5DE500E8DC32 /* ViewController.m */; };
-		5131B26D1C6E5DE500E8DC32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5131B26B1C6E5DE500E8DC32 /* Main.storyboard */; };
+		5131B26A1C6E5DE500E8DC32 /* IRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */; };
 		5131B26F1C6E5DE500E8DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */; };
-		5131B2721C6E5DE500E8DC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5131B2701C6E5DE500E8DC32 /* LaunchScreen.storyboard */; };
+		5131B27A1C6E5E7B00E8DC32 /* IRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */; };
+		5131B27C1C6E6B9C00E8DC32 /* IRLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		5131B2631C6E5DE500E8DC32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5131B2651C6E5DE500E8DC32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5131B2661C6E5DE500E8DC32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5131B2681C6E5DE500E8DC32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5131B2691C6E5DE500E8DC32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5131B26C1C6E5DE500E8DC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5131B2681C6E5DE500E8DC32 /* IRMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRMainViewController.h; sourceTree = "<group>"; };
+		5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRMainViewController.m; sourceTree = "<group>"; };
 		5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5131B2711C6E5DE500E8DC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5131B2731C6E5DE500E8DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRMainViewController.xib; sourceTree = "<group>"; };
+		5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRLaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +60,13 @@
 			children = (
 				5131B2651C6E5DE500E8DC32 /* AppDelegate.h */,
 				5131B2661C6E5DE500E8DC32 /* AppDelegate.m */,
-				5131B2681C6E5DE500E8DC32 /* ViewController.h */,
-				5131B2691C6E5DE500E8DC32 /* ViewController.m */,
-				5131B26B1C6E5DE500E8DC32 /* Main.storyboard */,
+				5131B2681C6E5DE500E8DC32 /* IRMainViewController.h */,
+				5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */,
+				5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */,
 				5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */,
-				5131B2701C6E5DE500E8DC32 /* LaunchScreen.storyboard */,
 				5131B2731C6E5DE500E8DC32 /* Info.plist */,
 				5131B2621C6E5DE500E8DC32 /* Supporting Files */,
+				5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */,
 			);
 			path = iRecognize;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5131B2721C6E5DE500E8DC32 /* LaunchScreen.storyboard in Resources */,
+				5131B27C1C6E6B9C00E8DC32 /* IRLaunchScreen.xib in Resources */,
+				5131B27A1C6E5E7B00E8DC32 /* IRMainViewController.xib in Resources */,
 				5131B26F1C6E5DE500E8DC32 /* Assets.xcassets in Resources */,
-				5131B26D1C6E5DE500E8DC32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5131B26A1C6E5DE500E8DC32 /* ViewController.m in Sources */,
+				5131B26A1C6E5DE500E8DC32 /* IRMainViewController.m in Sources */,
 				5131B2671C6E5DE500E8DC32 /* AppDelegate.m in Sources */,
 				5131B2641C6E5DE500E8DC32 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5131B26B1C6E5DE500E8DC32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5131B26C1C6E5DE500E8DC32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5131B2701C6E5DE500E8DC32 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5131B2711C6E5DE500E8DC32 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5131B2741C6E5DE500E8DC32 /* Debug */ = {
