@@ -39,10 +39,14 @@ static const char * const fontTypes[] = {
 	"Segoe UI Symbol"
 };
 
-const char* evaluate(unsigned char picture[], int sizeX, int sizeY) {
+static const char* evaluate(unsigned char picture[], int sizeX, int sizeY) {
 	srand(time(NULL));
 	int result = rand() % 26;
 	return fontTypes[result];
+}
+
++ (NSString*)evaluateObjc {
+	return [NSString stringWithUTF8String:evaluate(NULL, 0, 0)];
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface IREvaluator : NSObject
 
++ (NSString*)evaluateObjc;
+
 @end

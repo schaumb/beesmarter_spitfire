@@ -14,6 +14,7 @@ alpha:1.0]
 
 #import "IRUseModeViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "IREvaluator.h"
 
 @interface IRUseModeViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *takePhotoButton;
@@ -72,7 +73,7 @@ alpha:1.0]
 - (void)fakeDetect {
 	[UIView animateWithDuration:0.3f animations:^{
 		_typeLabelContainerView.alpha = 1.0f;
-		[_fontTypeLabel setText:@"Font Type: Fanwood"];
+		[_fontTypeLabel setText:[NSString stringWithFormat:@"Font type: %@ ", [IREvaluator evaluateObjc]]];
 	}];
 }
 

@@ -9,7 +9,6 @@
 #import "IRMainViewController.h"
 #import "IRUseModeViewController.h"
 #import "IRTestModeViewController.h"
-#import <map>
 
 @interface IRMainViewController () 
 

@@ -13,6 +13,7 @@ blue:((float)((rgbValue & 0x0000FF) >>  0))/255.0 \
 alpha:1.0]
 
 #import "IRTestModeViewController.h"
+#import "IREvaluator.h"
 
 @interface IRTestModeViewController () <NSStreamDelegate>
 
@@ -23,11 +24,11 @@ alpha:1.0]
 @property (nonatomic, assign) BOOL previousMessageSent;
 @property (nonatomic, assign) BOOL firstContainerTop;
 @property (nonatomic, assign) NSInteger imagesLeftOnServer;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIView *labelContainerView;
-@property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelContainerHeight;
-@property (weak, nonatomic) IBOutlet UIButton *goButton;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIView *labelContainerView;
+@property (nonatomic, weak) IBOutlet UILabel *label;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *labelContainerHeight;
+@property (nonatomic, weak) IBOutlet UIButton *goButton;
 
 - (IBAction)goButtonPressed:(id)sender;
 
@@ -75,7 +76,6 @@ alpha:1.0]
 	_previousMessage = message;
 	if (![_outputStream hasSpaceAvailable])
 		return;
-//	NSLog(@"Handling: %@", message);
 	if ([message isEqualToString:@"BeeZZZ 1.0 SERVER HELLO\n"]) {
 		[self sayHiToServer];
 	}
@@ -96,7 +96,7 @@ alpha:1.0]
 	else if ([message rangeOfString:@"<<"].location != NSNotFound){
 		_imageBuffer = [_imageBuffer stringByAppendingString:message];
 		[self showPicturePreview];
-		[self sendFontName:@"Anonymus Pro"];
+		[self sendFontName:[IREvaluator evaluateObjc]];
 	}
 	else if ([message rangeOfString:@">>"].location != NSNotFound){
 		_imageBuffer = [NSString stringWithString:message];
@@ -126,11 +126,7 @@ alpha:1.0]
 	uint8_t *buf = (uint8_t *)[message UTF8String];
 	if ([_outputStream hasSpaceAvailable]) {
 		[_outputStream write:buf maxLength:strlen((char*)buf)];
-//		NSLog(@"Writing out the following: %@", message);
 		_previousMessageSent = YES;
-	}
-	else {
-//		NSLog(@"Stream does not have space!");
 	}
 }
 
@@ -177,7 +173,6 @@ alpha:1.0]
 - (IBAction)goButtonPressed:(id)sender {
 	[self destroyConnection];
 	[self initNetworkCommunication];
-	[_goButton setEnabled:NO];
 }
 
 #pragma mark - NSStreamDelegate
@@ -185,7 +180,7 @@ alpha:1.0]
 - (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent {
 	switch (streamEvent) {
 		case NSStreamEventOpenCompleted:
-//			[_label setText:@"Stream Opened"];
+			[_goButton setHidden:YES];
 			break;
 		case NSStreamEventHasBytesAvailable:
 			if (theStream == _inputStream) {
@@ -208,14 +203,12 @@ alpha:1.0]
 				[self handleServerMessage:_previousMessage];
 			}
 		case NSStreamEventErrorOccurred:
-//			[_label setText:@"Cannot connect to the Host"];
 			break;
 		case NSStreamEventEndEncountered:
 			[self destroyConnection];
 			break;
 		default:
 			break;
-//			[_label setText:@"Unknow Event"];
 	}
 }
 
