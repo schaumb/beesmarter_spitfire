@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		5131B2641C6E5DE500E8DC32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2631C6E5DE500E8DC32 /* main.m */; };
 		5131B2671C6E5DE500E8DC32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2661C6E5DE500E8DC32 /* AppDelegate.m */; };
-		5131B26A1C6E5DE500E8DC32 /* IRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */; };
+		5131B26A1C6E5DE500E8DC32 /* IRMainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5131B2691C6E5DE500E8DC32 /* IRMainViewController.mm */; };
 		5131B26F1C6E5DE500E8DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */; };
 		5131B27A1C6E5E7B00E8DC32 /* IRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */; };
 		5131B27C1C6E6B9C00E8DC32 /* IRLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */; };
 		5131B27E1C6E827200E8DC32 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131B27D1C6E827200E8DC32 /* AVFoundation.framework */; };
 		51C93AAD1C6F786D00F52F19 /* IREvaluator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51C93AAC1C6F786D00F52F19 /* IREvaluator.mm */; };
+		51C93ACC1C6F832800F52F19 /* IRUseModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C93ACA1C6F832800F52F19 /* IRUseModeViewController.m */; };
+		51C93ACD1C6F832800F52F19 /* IRUseModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C93ACB1C6F832800F52F19 /* IRUseModeViewController.xib */; };
+		51C93AD11C6F878800F52F19 /* IRTestModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C93ACF1C6F878800F52F19 /* IRTestModeViewController.m */; };
+		51C93AD21C6F878800F52F19 /* IRTestModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C93AD01C6F878800F52F19 /* IRTestModeViewController.xib */; };
+		51C93AD71C6F8AC700F52F19 /* icon_placeholder_4_3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51C93AD61C6F8AC700F52F19 /* icon_placeholder_4_3@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5131B25F1C6E5DE500E8DC32 /* iRecognize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRecognize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5131B2631C6E5DE500E8DC32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5131B2651C6E5DE500E8DC32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5131B2661C6E5DE500E8DC32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5131B2651C6E5DE500E8DC32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iRecognize/AppDelegate.h; sourceTree = "<group>"; };
+		5131B2661C6E5DE500E8DC32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iRecognize/AppDelegate.m; sourceTree = "<group>"; };
 		5131B2681C6E5DE500E8DC32 /* IRMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRMainViewController.h; sourceTree = "<group>"; };
-		5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRMainViewController.m; sourceTree = "<group>"; };
+		5131B2691C6E5DE500E8DC32 /* IRMainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IRMainViewController.mm; sourceTree = "<group>"; };
 		5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5131B2731C6E5DE500E8DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRMainViewController.xib; sourceTree = "<group>"; };
@@ -31,6 +36,13 @@
 		5131B27D1C6E827200E8DC32 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		51C93AAB1C6F786D00F52F19 /* IREvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IREvaluator.h; sourceTree = "<group>"; };
 		51C93AAC1C6F786D00F52F19 /* IREvaluator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IREvaluator.mm; sourceTree = "<group>"; };
+		51C93AC91C6F832800F52F19 /* IRUseModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRUseModeViewController.h; sourceTree = "<group>"; };
+		51C93ACA1C6F832800F52F19 /* IRUseModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRUseModeViewController.m; sourceTree = "<group>"; };
+		51C93ACB1C6F832800F52F19 /* IRUseModeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRUseModeViewController.xib; sourceTree = "<group>"; };
+		51C93ACE1C6F878800F52F19 /* IRTestModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTestModeViewController.h; sourceTree = "<group>"; };
+		51C93ACF1C6F878800F52F19 /* IRTestModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTestModeViewController.m; sourceTree = "<group>"; };
+		51C93AD01C6F878800F52F19 /* IRTestModeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRTestModeViewController.xib; sourceTree = "<group>"; };
+		51C93AD61C6F8AC700F52F19 /* icon_placeholder_4_3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon_placeholder_4_3@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +60,8 @@
 		5131B2561C6E5DE400E8DC32 = {
 			isa = PBXGroup;
 			children = (
-				5131B27F1C6E82CC00E8DC32 /* Frameworks */,
+				5131B2651C6E5DE500E8DC32 /* AppDelegate.h */,
+				5131B2661C6E5DE500E8DC32 /* AppDelegate.m */,
 				5131B2611C6E5DE500E8DC32 /* iRecognize */,
 				5131B2601C6E5DE500E8DC32 /* Products */,
 			);
@@ -65,17 +78,20 @@
 		5131B2611C6E5DE500E8DC32 /* iRecognize */ = {
 			isa = PBXGroup;
 			children = (
-				5131B2651C6E5DE500E8DC32 /* AppDelegate.h */,
-				5131B2661C6E5DE500E8DC32 /* AppDelegate.m */,
-				5131B2681C6E5DE500E8DC32 /* IRMainViewController.h */,
-				5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */,
-				5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */,
-				5131B2731C6E5DE500E8DC32 /* Info.plist */,
-				5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */,
 				51C93AAB1C6F786D00F52F19 /* IREvaluator.h */,
 				51C93AAC1C6F786D00F52F19 /* IREvaluator.mm */,
+				5131B2681C6E5DE500E8DC32 /* IRMainViewController.h */,
+				5131B2691C6E5DE500E8DC32 /* IRMainViewController.mm */,
+				5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */,
+				51C93ACE1C6F878800F52F19 /* IRTestModeViewController.h */,
+				51C93ACF1C6F878800F52F19 /* IRTestModeViewController.m */,
+				51C93AD01C6F878800F52F19 /* IRTestModeViewController.xib */,
+				51C93AC91C6F832800F52F19 /* IRUseModeViewController.h */,
+				51C93ACA1C6F832800F52F19 /* IRUseModeViewController.m */,
+				51C93ACB1C6F832800F52F19 /* IRUseModeViewController.xib */,
+				51C93AD31C6F89D000F52F19 /* Assets */,
+				5131B27F1C6E82CC00E8DC32 /* Frameworks */,
 				5131B2621C6E5DE500E8DC32 /* Supporting Files */,
-				5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */,
 			);
 			path = iRecognize;
 			sourceTree = "<group>";
@@ -83,6 +99,9 @@
 		5131B2621C6E5DE500E8DC32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */,
+				5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */,
+				5131B2731C6E5DE500E8DC32 /* Info.plist */,
 				5131B2631C6E5DE500E8DC32 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -94,6 +113,15 @@
 				5131B27D1C6E827200E8DC32 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		51C93AD31C6F89D000F52F19 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				51C93AD61C6F8AC700F52F19 /* icon_placeholder_4_3@2x.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C93ACD1C6F832800F52F19 /* IRUseModeViewController.xib in Resources */,
 				5131B27C1C6E6B9C00E8DC32 /* IRLaunchScreen.xib in Resources */,
 				5131B27A1C6E5E7B00E8DC32 /* IRMainViewController.xib in Resources */,
 				5131B26F1C6E5DE500E8DC32 /* Assets.xcassets in Resources */,
+				51C93AD71C6F8AC700F52F19 /* icon_placeholder_4_3@2x.jpg in Resources */,
+				51C93AD21C6F878800F52F19 /* IRTestModeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5131B26A1C6E5DE500E8DC32 /* IRMainViewController.m in Sources */,
+				5131B26A1C6E5DE500E8DC32 /* IRMainViewController.mm in Sources */,
+				51C93ACC1C6F832800F52F19 /* IRUseModeViewController.m in Sources */,
+				51C93AD11C6F878800F52F19 /* IRTestModeViewController.m in Sources */,
 				5131B2671C6E5DE500E8DC32 /* AppDelegate.m in Sources */,
 				51C93AAD1C6F786D00F52F19 /* IREvaluator.mm in Sources */,
 				5131B2641C6E5DE500E8DC32 /* main.m in Sources */,

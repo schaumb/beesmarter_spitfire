@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IRUseModeViewController">
+            <connections>
+                <outlet property="fontTypeLabel" destination="Ghm-Ry-ANY" id="NyA-5H-YYr"/>
+                <outlet property="previewImage" destination="LJX-yq-50q" id="f1X-ID-eCO"/>
+                <outlet property="takePhotoButton" destination="mYX-bp-5PR" id="mCw-Qi-qt4"/>
+                <outlet property="typeLabelContainerView" destination="mLI-mM-ci0" id="ihh-3T-VI3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYX-bp-5PR">
+                    <rect key="frame" x="20" y="394" width="280" height="31"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Take Photo">
+                        <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="photoButtonPressed:" destination="-1" eventType="touchUpInside" id="075-qb-JBT"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_placeholder_4_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LJX-yq-50q">
+                    <rect key="frame" x="20" y="0.0" width="280" height="374"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LJX-yq-50q" secondAttribute="height" multiplier="3:4" id="NhF-UF-38i"/>
+                    </constraints>
+                </imageView>
+                <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLI-mM-ci0">
+                    <rect key="frame" x="20" y="435" width="280" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghm-Ry-ANY">
+                            <rect key="frame" x="140" y="15" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.45882352939999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ghm-Ry-ANY" firstAttribute="centerY" secondItem="mLI-mM-ci0" secondAttribute="centerY" id="VxC-ej-O34"/>
+                        <constraint firstAttribute="height" constant="30" id="fn9-Mp-u0p"/>
+                        <constraint firstItem="Ghm-Ry-ANY" firstAttribute="centerX" secondItem="mLI-mM-ci0" secondAttribute="centerX" id="vdO-QZ-y21"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mYX-bp-5PR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3aM-ef-Yuf"/>
+                <constraint firstAttribute="trailing" secondItem="LJX-yq-50q" secondAttribute="trailing" constant="20" id="4WR-JH-Mr7"/>
+                <constraint firstItem="LJX-yq-50q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4zS-X6-ZkN"/>
+                <constraint firstAttribute="trailing" secondItem="mLI-mM-ci0" secondAttribute="trailing" constant="20" id="LyO-eC-F6u"/>
+                <constraint firstItem="mLI-mM-ci0" firstAttribute="top" secondItem="mYX-bp-5PR" secondAttribute="bottom" constant="10" id="Vfg-Fi-fRL"/>
+                <constraint firstAttribute="trailing" secondItem="mYX-bp-5PR" secondAttribute="trailing" constant="20" id="aLH-WL-je4"/>
+                <constraint firstItem="LJX-yq-50q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="h0w-rl-96L"/>
+                <constraint firstItem="mYX-bp-5PR" firstAttribute="top" secondItem="LJX-yq-50q" secondAttribute="bottom" constant="20" id="kOM-Sl-WkX"/>
+                <constraint firstItem="mLI-mM-ci0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="v2P-iT-nKw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="471" y="327"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_placeholder_4_3.jpg" width="300" height="400"/>
+    </resources>
+</document>
