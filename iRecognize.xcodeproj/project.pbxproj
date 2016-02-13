@@ -13,6 +13,7 @@
 		5131B26F1C6E5DE500E8DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */; };
 		5131B27A1C6E5E7B00E8DC32 /* IRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */; };
 		5131B27C1C6E6B9C00E8DC32 /* IRLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */; };
+		5131B27E1C6E827200E8DC32 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131B27D1C6E827200E8DC32 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5131B2731C6E5DE500E8DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRMainViewController.xib; sourceTree = "<group>"; };
 		5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRLaunchScreen.xib; sourceTree = "<group>"; };
+		5131B27D1C6E827200E8DC32 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5131B27E1C6E827200E8DC32 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				5131B2611C6E5DE500E8DC32 /* iRecognize */,
+				5131B27F1C6E82CC00E8DC32 /* Frameworks */,
 				5131B2601C6E5DE500E8DC32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +81,14 @@
 				5131B2631C6E5DE500E8DC32 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5131B27F1C6E82CC00E8DC32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5131B27D1C6E827200E8DC32 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

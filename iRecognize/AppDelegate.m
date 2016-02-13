@@ -17,11 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	IRMainViewController *_mainViewController = [[IRMainViewController alloc] initWithNibName:@"IRMainViewController" bundle:[NSBundle mainBundle]];
+	UINavigationController *_navigationController = [[UINavigationController alloc] initWithRootViewController:_mainViewController];
+	_navigationController.navigationBarHidden = YES;
+	[self.window setRootViewController:_navigationController];
 	[self.window makeKeyAndVisible];
-	self.mainViewController = [[IRMainViewController alloc] initWithNibName:@"IRMainViewController" bundle:[NSBundle mainBundle]];
-	self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
-	self.navigationController.navigationBarHidden = YES;
-	[self.window setRootViewController:_mainViewController];
 	return YES;
 }
 
