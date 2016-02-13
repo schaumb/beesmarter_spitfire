@@ -9,8 +9,6 @@
 #import "IRMainViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-
-
 @interface IRMainViewController () 
 
 - (IBAction)showPreviewButtonPressed:(id)sender;
@@ -49,7 +47,7 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-
+	
 }
 
 

@@ -14,6 +14,7 @@
 		5131B27A1C6E5E7B00E8DC32 /* IRMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */; };
 		5131B27C1C6E6B9C00E8DC32 /* IRLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */; };
 		5131B27E1C6E827200E8DC32 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5131B27D1C6E827200E8DC32 /* AVFoundation.framework */; };
+		51C93AAD1C6F786D00F52F19 /* IREvaluator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51C93AAC1C6F786D00F52F19 /* IREvaluator.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRMainViewController.xib; sourceTree = "<group>"; };
 		5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRLaunchScreen.xib; sourceTree = "<group>"; };
 		5131B27D1C6E827200E8DC32 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		51C93AAB1C6F786D00F52F19 /* IREvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IREvaluator.h; sourceTree = "<group>"; };
+		51C93AAC1C6F786D00F52F19 /* IREvaluator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IREvaluator.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +48,8 @@
 		5131B2561C6E5DE400E8DC32 = {
 			isa = PBXGroup;
 			children = (
-				5131B2611C6E5DE500E8DC32 /* iRecognize */,
 				5131B27F1C6E82CC00E8DC32 /* Frameworks */,
+				5131B2611C6E5DE500E8DC32 /* iRecognize */,
 				5131B2601C6E5DE500E8DC32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,10 +70,12 @@
 				5131B2681C6E5DE500E8DC32 /* IRMainViewController.h */,
 				5131B2691C6E5DE500E8DC32 /* IRMainViewController.m */,
 				5131B2791C6E5E7B00E8DC32 /* IRMainViewController.xib */,
-				5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */,
 				5131B2731C6E5DE500E8DC32 /* Info.plist */,
-				5131B2621C6E5DE500E8DC32 /* Supporting Files */,
 				5131B27B1C6E6B9C00E8DC32 /* IRLaunchScreen.xib */,
+				51C93AAB1C6F786D00F52F19 /* IREvaluator.h */,
+				51C93AAC1C6F786D00F52F19 /* IREvaluator.mm */,
+				5131B2621C6E5DE500E8DC32 /* Supporting Files */,
+				5131B26E1C6E5DE500E8DC32 /* Assets.xcassets */,
 			);
 			path = iRecognize;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			files = (
 				5131B26A1C6E5DE500E8DC32 /* IRMainViewController.m in Sources */,
 				5131B2671C6E5DE500E8DC32 /* AppDelegate.m in Sources */,
+				51C93AAD1C6F786D00F52F19 /* IREvaluator.mm in Sources */,
 				5131B2641C6E5DE500E8DC32 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +297,7 @@
 				5131B2781C6E5DE500E8DC32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
